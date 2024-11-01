@@ -118,7 +118,7 @@ width: 100%;}
     </div>
   </div>
   <script>
-    // C骴igo JavaScript para controlar el reproductor
+    // C贸digo JavaScript para controlar el reproductor
     const video = document.getElementById('video');
     const anterior = document.getElementById('anterior');
     const playPause = document.getElementById('play-pause');
@@ -136,13 +136,13 @@ width: 100%;}
     
     let indiceActual = 0;
     
-    // Funci髇 para cargar el video actual
+    // Funci贸n para cargar el video actual
     function cargarVideo() {
       video.src = videos[indiceActual].src;
       video.type = videos[indiceActual].type;
     }
     
-    // Funci髇 para play/pause
+    // Funci贸n para play/pause
     function playPauseVideo() {
       if (video.paused) {
         video.play();
@@ -151,13 +151,13 @@ width: 100%;}
       }
     }
     
-    // Funci髇 para pasar al siguiente video
+    // Funci贸n para pasar al siguiente video
     function siguienteVideo() {
       indiceActual = (indiceActual + 1) % videos.length;
       cargarVideo();
     }
     
-    // Funci髇 para pasar al video anterior
+    // Funci贸n para pasar al video anterior
     function anteriorVideo() {
       indiceActual = (indiceActual - 1 + videos.length) % videos.length;
       cargarVideo();
